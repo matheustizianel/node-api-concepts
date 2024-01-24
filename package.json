@@ -1,0 +1,16 @@
+{
+  "name": "api-concept",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API RESTful developed for study purposes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Matheus Sanches Tizianel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

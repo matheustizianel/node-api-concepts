@@ -1,9 +1,8 @@
 import { Router } from "express";
+import { UsersController } from "../controllers/UsersController.js";
 
 export const usersRoutes = Router();
 
-usersRoutes.post("/", (req, res) => {
-  const { name, email, phone_number, password } = req.body;
+const usersController = new UsersController();
 
-  res.json({ name, email, phone_number, password });
-});
+usersRoutes.post("/", usersController.create);
